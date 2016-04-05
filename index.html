@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RxGame</title>
+    <link href="./dist/main.css" rel="stylesheet">
+</head>
+<body>
+<div>
+    <span class="column">
+        <ul id="operators">
+            <li id="op-just">just(value)</li>
+            <li id="op-from">from(array)</li>
+            <li id="op-map">map(fn)</li>
+            <li id="op-filter">filter(fn)</li>
+            <li id="op-scan">scan(fn)</li>
+            <li id="op-reduce">reduce(fn)</li>
+        </ul>
+        <ul id="functions">
+            <li id="fn-id">x => x</li>
+            <li id="fn-not">x => !x</li>
+            <li id="fn-true">() => true</li>
+            <li id="fn-false">() => false</li>
+            <li id="fn-double">x => x * 2</li>
+            <li id="fn-half">x => Math.round(x / 2)</li>
+            <li id="fn-second">x => x % 2</li>
+            <li id="fn-third">x => x % 3</li>
+        </ul>
+        <ul>
+            <li id="v-one">1</li>
+            <li id="v-two">2</li>
+            <li id="v-three">3</li>
+            <li id="v-five">5</li>
+            <li id="v-a-three">[1, 2, 3]</li>
+            <li id="v-a-five">[1, 2, 3, 4, 5]</li>
+        </ul>
+    </span>
+    <span class="column" id="field">
+        <div id="player2">
+            <span data-stream-index="0" class="stream-spot">spot</span>
+            <span data-stream-index="1" class="stream-spot">spot</span>
+            <span data-stream-index="2" class="stream-spot">spot</span>
+            <span data-stream-index="3" class="stream-spot">spot</span>
+            <span data-stream-index="4" class="stream-spot">spot</span>
+        </div>
+        <div id="score">0</div>
+        <div id="player1">
+            <span data-stream-index="0" class="stream-spot">spot</span>
+            <span data-stream-index="1" class="stream-spot">spot</span>
+            <span data-stream-index="2" class="stream-spot">spot</span>
+            <span data-stream-index="3" class="stream-spot">spot</span>
+            <span data-stream-index="4" class="stream-spot">spot</span>
+        </div>
+    </span>
+</div>
+<script src="dist/bundle.js"></script>
+</body>
+</html>
